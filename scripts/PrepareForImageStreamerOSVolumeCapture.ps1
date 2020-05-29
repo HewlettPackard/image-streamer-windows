@@ -41,7 +41,7 @@ Try
     # Generalize Windows with sysprep, but quit rather than reboot or shutdown
     & $env:windir\System32\Sysprep\sysprep /generalize /oobe /quit
     
-    Wait-Process –Name “sysprep”
+    Wait-Process -Name "sysprep"
     
     reg import C:\driveletters.reg
     
